@@ -1,0 +1,159 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    max-width: 800px;
+    margin: auto;
+}
+
+header{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    background-color: #00b79c;
+    padding: 10px;
+}
+
+#area-central{
+    background-image: url(../imagens/palestra.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+}
+
+#classform h2{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#classform p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#classform{
+    padding: 15px;
+    margin: 20px;
+    max-width: 240px;
+    float: right;
+    background-color: rgb(255, 255, 255, 0.7);
+    color: white;
+}
+
+input, select{
+    border: none;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 220px;
+}
+
+select{
+    background-color: white;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 240px;
+    background-image: url(../imagens/seta.png);
+    background-size: 3%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+input[type="submit"]{
+    width: 240px;
+    background-color: #00b79c;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #323636;
+    color: #00b79c;
+    outline: 1px solid #00b79c;
+
+}
+
+footer{
+    background-color: #323636;
+    height: 280px;
+    position: relative;    
+}
+
+#foto{
+    position: absolute;
+    float: left;
+    height: 150px;
+    right: 65%;
+    top: 50px;
+    border-radius: 50%;
+}
+
+#descricao{
+    float: right;
+    position: absolute;
+    left: 40%;
+    color: white;
+    top: 15%;
+    right: 10%;
+}
+
+#descricao p{
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+
+    #area-central{
+        position: relative;
+        height: 450px;
+    }
+
+    #classform{
+        padding: 15px;
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #foto{
+        height: 100px;
+        top: 37%;
+    }
+
+
+    footer{
+        height: 350px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    #descricao{
+        top: 35px;
+    }
+
+    #p2{
+        padding-top: 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 300px){
+
+    footer{
+        overflow: auto;
+    }
+}
+
