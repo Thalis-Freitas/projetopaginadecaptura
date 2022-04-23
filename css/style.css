@@ -78,7 +78,12 @@ input[type="submit"]:hover{
     background-color: #323636;
     color: #00b79c;
     outline: 1px solid #00b79c;
+}
 
+input[type="submit"]:active{
+    background-color: #323636;
+    color: #00b79c;
+    outline: 1px solid #00b79c;
 }
 
 footer{
